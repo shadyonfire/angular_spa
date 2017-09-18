@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>intern assingment</title>
+    <script src="../bower_components/angular/angular.js"></script>
+    <style>
+        hr{
+            width: 70%;
+        }
+        h1{
+            color:white
+        }
+    </style>
+</head>
+<body>
+<div align="center">
+    <div ng-controller="ctrl_one">
+            click here to print "Hello world" using scope and rootScope object<hr>
+            <button ng-click="print_hello()">show</button>
+
+            <hr>
+            using Scope,this variable is in same controller as button.<br>
+        <h1> {{var_one}}</h1>
+    </div>
+    <hr>
+    <div ng-controller="ctrl_two">
+        using roorScope,this variable is in diffrent controller as button<br>
+        <h1>{{var_two}}<h1>
+    </div>
+    <hr>
+</div>
+</body>
+</html>

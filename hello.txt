@@ -1,0 +1,4 @@
+
+this is printed by predefined service HTTP from hello.txt
+:
+HELLO WORLD

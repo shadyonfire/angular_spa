@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <script src="../bower_components/angular/angular.js"></script>
+    <script src="../bower_components/angular-route/angular-route.js"></script>
+    <style>
+        body{
+            height:100vh;
+            background:linear-gradient(deepskyblue,white);
+            font-size: 20px;
+        }
+        ul  li{
+            display: inline-block;
+            text-decoration:none;
+            font-size: 20px;
+            color:red;
+        }
+        ul{
+            color:white;
+        }
+        .spa_container{
+            width:50vw;
+            margin-left:25vw;
+            background: linear-gradient(lightskyblue,white);
+
+        }
+        div[ng-view]{
+            height: 60vh;
+            padding:10vh;
+            background: linear-gradient(deepskyblue,white);
+        }
+    </style>
+
+</head>
+<body ng-app="app">
+<div class="spa_container">
+    <div align="center" >
+    <ul align="center">
+        <li><a href="#">Main</a></li> |
+        <li><a href="#!scoping">Scoping</a></li> |
+        <li><a href="#!services">Services</a></li> |
+        <li><a href="#!directives">Directives</a></li> |
+        <li><a href="#!twowaydata">TwoWayData</a></li> |
+        <li><a href="#!aboutme">About me</a></li>
+    </ul></div>
+        <br>
+    <div ng-view></div>
+</div>
+<script src="js/app.js"></script>
+<script src="js/config.js"></script>
+<script src="js/controller.js"></script>
+
+</body>
+</html>
